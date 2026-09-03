@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thank you | Engineered Arts</title>
+<meta name="description" content="Thanks for your demo request. An Engineered Arts specialist will be in touch within one business day.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0D11'/%3E%3Cpath d='M16 6l8 20h-4l-1.6-4h-4.8L12 26H8z' fill='%238E97F0'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0B0D11; --bg-2:#0F1217; --panel:#14181F; --panel-2:#171C24; --line:#242A33;
+  --ink:#F5F6F8; --ink-2:#AAB1BB; --ink-3:#8A909A;
+  --accent:#8E97F0; --accent-2:#A6AEF6; --accent-ink:#0A0C16;
+  --band:#F4F5F7; --band-ink:#12151B; --band-2:#5E656F;
+  --maxw:1200px; --pad:clamp(20px,5vw,72px);
+  --sec:clamp(72px,9vw,124px); --sec-sm:clamp(52px,6vw,84px);
+  --disp:"Futura","Century Gothic",ui-sans-serif,system-ui,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--disp);
+  font-weight:400;line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{margin:0;font-weight:700;line-height:1.04;letter-spacing:-.015em}
+h1{font-size:clamp(40px,6.2vw,72px)}
+h2{font-size:clamp(30px,3.8vw,46px)}
+h3{font-size:20px;letter-spacing:0}
+p{margin:0}
+.lead{font-size:clamp(18px,1.5vw,21px);color:var(--ink-2);line-height:1.5;max-width:48ch}
+.section{padding:var(--sec) 0}
+.section--sm{padding:var(--sec-sm) 0}
+.head{max-width:60ch;margin-bottom:clamp(34px,4vw,52px)}
+.head h2+p{color:var(--ink-2);margin-top:16px;font-size:18px;max-width:56ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;font:inherit;font-weight:700;
+  cursor:pointer;border-radius:999px;padding:15px 30px;text-decoration:none;border:1px solid transparent;
+  transition:background .15s,border-color .15s,color .15s}
+.btn--primary{background:var(--accent);color:var(--accent-ink)}
+.btn--primary:hover{background:var(--accent-2)}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn--ghost:hover{border-color:var(--ink-3)}
+.btn--dark{background:#20252e;color:#fff;border-color:var(--line)}
+.btn--dark:hover{background:#2a313b}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:8px;top:-48px;z-index:60;background:var(--accent);color:var(--accent-ink);
+  font-weight:700;padding:10px 16px;border-radius:8px;transition:top .15s}
+.skip:focus{top:8px}
+
+.nav{position:sticky;top:0;z-index:30;background:rgba(11,13,17,.8);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-weight:700;font-size:19px;letter-spacing:.01em;text-decoration:none}
+.brand b{color:var(--accent)}
+.nav .btn{padding:11px 22px}
+
+.hero{padding:clamp(58px,8vw,104px) 0 clamp(50px,6vw,84px)}
+.hero__grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(30px,5vw,68px);align-items:center}
+.hero__copy .lead{margin-top:22px}
+.hero__h2{margin-top:22px;font-size:clamp(19px,1.7vw,23px);font-weight:500;color:var(--ink);
+  max-width:42ch;line-height:1.38}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero__media img{width:100%;border-radius:6px}
+.duo{position:relative;aspect-ratio:1/1.04}
+.duo__fs{position:absolute;inset:0 9% 0 0}
+.duo__fs img{height:100%;width:100%;object-fit:cover;border-radius:6px}
+.duo__dk{position:absolute;right:0;bottom:-3%;width:47%;border:1px solid var(--line);
+  border-radius:6px;overflow:hidden;box-shadow:0 26px 64px rgba(0,0,0,.6);background:#000}
+.duo__dk img{width:100%}
+.tag{position:absolute;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink);
+  background:rgba(11,13,17,.74);border:1px solid var(--line);padding:6px 12px;border-radius:999px;
+  backdrop-filter:blur(4px)}
+.tag--fs{left:14px;top:14px}.tag--dk{right:12px;bottom:11px}
+
+.trust{background:var(--band);color:var(--band-ink)}
+.trust__in{padding:30px 0 34px;text-align:center}
+.trust__label{font-size:14px;color:var(--band-2);margin-bottom:20px}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(30px,6vw,64px)}
+.logos img{width:auto;object-fit:contain;opacity:.92}
+.logos .l-nasa{height:34px}
+.logos .l-merlin{height:46px}
+.logos .l-tussauds{height:26px;border-radius:3px}
+.logos .l-appdirect{height:22px}
+
+.stage{text-align:center}
+.stage h2{max-width:20ch;margin:0 auto}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,4vw,40px);margin-top:clamp(40px,5vw,60px)}
+.stat__n{font-size:clamp(44px,5.4vw,72px);font-weight:700;letter-spacing:-.03em;color:var(--accent-2);line-height:1}
+.stat__l{color:var(--ink-2);margin-top:12px;font-size:15px}
+.stage__cap{color:var(--ink-3);font-size:15px;margin-top:clamp(30px,4vw,44px);max-width:70ch;margin-left:auto;margin-right:auto}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid2b{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.stepno{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px;letter-spacing:.02em}
+.ty{max-width:760px}
+.ty .lead{margin-top:20px}
+.ty__badge{width:64px;height:64px;border-radius:999px;background:rgba(142,151,240,.14);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:26px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:30px;height:100%}
+.card h3{margin-bottom:10px}
+.card p{color:var(--ink-2);font-size:15.5px;line-height:1.5}
+.card__k{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px}
+.card .btn{margin-top:24px}
+
+.spec{border-top:1px solid var(--line)}
+.spec__row{display:grid;grid-template-columns:300px 1fr;gap:24px;padding:20px 2px;
+  border-bottom:1px solid var(--line);align-items:baseline}
+.spec__k{color:var(--ink-2);font-size:15px}
+.spec__v{font-size:18px;font-weight:500}
+.spec__note{color:var(--ink-3);font-size:14px;margin-top:18px}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,72px);align-items:center}
+.triband{background:linear-gradient(180deg,#0E1218,#0B0D11)}
+.triband__in{display:flex;align-items:baseline;justify-content:space-between;gap:28px;flex-wrap:wrap}
+
+.demo{background:var(--bg-2);border-top:1px solid var(--line)}
+.demo__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(34px,6vw,72px);align-items:start}
+.demo__lead{color:var(--ink-2);margin-top:18px;font-size:18px;max-width:44ch;line-height:1.5}
+.checks{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink)}
+.checks svg{flex:0 0 auto;margin-top:3px}
+.quote{margin:clamp(30px,4vw,42px) 0 0;padding-left:20px;border-left:2px solid var(--accent);max-width:52ch}
+.quote p{font-size:16px;line-height:1.55;color:var(--ink)}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
+.quote span{display:block;color:var(--ink-3);font-size:14px;margin-top:2px}
+.form{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:clamp(24px,3vw,34px)}
+.form h3{font-size:22px;margin-bottom:18px}
+.field{margin-bottom:15px}
+.field label{display:block;font-size:14px;color:var(--ink-2);margin-bottom:7px}
+.field input,.field textarea{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);
+  border-radius:7px;padding:13px 14px;font:inherit}
+.field input:focus,.field textarea:focus{border-color:var(--accent);outline:none}
+.field textarea{min-height:76px;resize:vertical}
+.form .btn{width:100%;margin-top:6px}
+.form__fine{color:var(--ink-3);font-size:13px;margin-top:14px;line-height:1.45}
+
+.foot{border-top:1px solid var(--line);color:var(--ink-3);font-size:14px}
+.foot__in{padding:36px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media(max-width:920px){
+  .hero__grid,.grid2,.split,.demo__grid,.triband__in{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr;gap:34px 24px}
+  .spec__row{grid-template-columns:1fr;gap:4px}
+  .hero__media{order:-1}.duo{aspect-ratio:4/3;max-width:540px}
+  .demo__grid{gap:44px}
+}
+@media(max-width:820px){ .grid3{grid-template-columns:1fr} }
+@media(max-width:560px){ .grid2,.grid2b{grid-template-columns:1fr} }
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style></head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav"><div class="wrap nav__in">
+  <a class="brand" href="brand-lp.html">Engineered <b>Arts</b></a>
+  <a class="btn btn--ghost" href="brand-lp.html">Back to site</a>
+</div></header>
+<section class="hero" id="main"><div class="wrap ty">
+  <div class="ty__badge"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke="#8E97F0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h1>Your demo request is in.</h1>
+  <p class="lead">Thanks. One of our specialists will reach out within one business day to set up your live session with Ameca.</p>
+  <div class="hero__cta">
+    <a class="btn btn--primary" href="brand-lp.html">Explore the Ameca models</a>
+    <a class="btn btn--ghost" href="humanoid-robotics-lp.html#tritium">Learn about Tritium</a>
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="head"><h2>What happens next.</h2></div>
+  <div class="grid3">
+    <div class="card"><div class="stepno">Step 1</div><h3>We match you</h3><p>We review your request and pair you with the specialist who knows your use case best.</p></div>
+    <div class="card"><div class="stepno">Step 2</div><h3>We schedule</h3><p>We set up a 30 minute live session at a time that works around your calendar.</p></div>
+    <div class="card"><div class="stepno">Step 3</div><h3>You meet Ameca</h3><p>You watch Ameca hold a real conversation and we map the right model and pricing for you.</p></div>
+  </div>
+</div></section>
+<footer class="foot"><div class="wrap foot__in">
+  <span>&copy; 2026 Engineered Arts</span><span>Social humanoid robotics</span>
+</div></footer>
+<script>
+  // Conversion fires on this page. Drop your tags here, for example:
+  // window.dataLayer=window.dataLayer||[]; dataLayer.push({event:"demo_request"});
+  // gtag('event','conversion',{send_to:'AW-XXXXXX/YYYY'});
+  // fbq('track','Lead');
+</script></body></html>
